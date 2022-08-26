@@ -212,7 +212,8 @@ button {
 }
 
 .citrus-inner-img22 {
-  padding: 0 15px;
+  padding: 0 0px;
+  margin-left: -20px;
 }
 
 .citrus-inner-img22 > a img {
@@ -472,6 +473,19 @@ button {
   }
   .citrusSolid__mobile_hide {
     display: none;
+  }
+
+  /* slider cta */
+  .citrusSolid__sliderCTABox button {
+    background: none;
+    color: #001952;
+    text-transform: capitalize;
+    text-decoration: underline;
+  }
+  .citrusSolid__sectionTitle {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
   }
 
   /* product tab */
