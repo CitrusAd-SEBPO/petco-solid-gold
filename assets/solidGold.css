@@ -466,7 +466,9 @@ button {
   color: #000;
   text-align: center;
 }
-/* Responsive styles */
+/*-******************** 
+Responsive styles 
+*************************/
 @media all and (max-width: 768px) {
   .citrusSolid__desktop_hide {
     display: block;
@@ -536,5 +538,45 @@ button {
   .citrusSolid__footerRow {
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 0;
+  }
+}
+/*****************************
+ tablet and small laptop 
+******************************/
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .citrusSolid__videoCol {
+    display: flex;
+    justify-content: center;
+  }
+  .citrusSolid__videoCol iframe {
+    position: relative;
+    top: 0px;
+    width: 400px;
+    height: 250px;
+  }
+  .citrusSolid__footerTextContainer p {
+    padding: 0 0px;
+  }
+}
+/* *****************
+ extra small device  
+**********************/
+@media all and (max-width: 425px) {
+  .citrusSolid__VideoTextContainer {
+    width: 380px;
+    width: 95%;
+    margin: auto;
+    margin-top: 0px;
+  }
+  .citrusSolid__navigation {
+    width: 1000px;
+  }
+  .citrusSolid__navigation-item {
+    margin: auto 10px;
+    width: 220px;
+    justify-content: left;
+  }
+  .citrusSolid__cardBody {
+    width: 248px;
   }
 }
