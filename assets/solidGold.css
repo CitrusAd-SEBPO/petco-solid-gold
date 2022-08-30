@@ -385,6 +385,20 @@ button {
   grid-row-gap: 30px;
   margin: auto;
 }
+.citrusSolid__findDogRecipesContainer .citrusSolid__productRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.citrusSolid__findDogRecipesContainer .citrusSolid__productCol {
+  width: 20%;
+  margin: auto;
+}
 .citrusSolid__productCard {
   text-align: center;
 }
@@ -534,8 +548,17 @@ Responsive styles
 
   /* product group section */
   .citrusSolid__productRow {
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-auto-flow: column;
+  }
+  .citrusSolid__findDogRecipesContainer .citrusSolid__productRow {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-flow: column;
+  }
+  .citrusSolid__findDogRecipesContainer .citrusSolid__productCol {
+    width: 100%;
   }
 
   /* footer */
@@ -548,6 +571,9 @@ Responsive styles
  tablet and small laptop 
 ******************************/
 @media all and (min-width: 768px) and (max-width: 1024px) {
+  .citrusSolid__findDogRecipesContainer .citrusSolid__productCol {
+    width: 25%;
+  }
   .citrusSolid__videoCol {
     display: flex;
     justify-content: center;
