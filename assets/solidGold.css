@@ -71,15 +71,13 @@ a {
 .citrusSolid__sliderCopyContainer {
   position: absolute;
   width: 100%;
-  /* height: 100%; */
-  top: 25%;
+  top: 10%;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 .citrusSolid__sliderTextBox {
   text-align: center;
-  width: 550px;
   max-width: 100%;
   margin: 0 auto;
   color: #001952;
@@ -87,10 +85,13 @@ a {
 .citrusSolid__sliderTextBox h1 {
   font-family: "PetcoCircularTT-Bold", arial !important;
   font-weight: 900;
-  font-size: 40px;
+  font-size: 50px;
   margin: 20px auto;
 }
 .citrusSolid__sliderTextBox p {
+  width: 450px;
+  max-width: 100%;
+  margin: auto;
   font-family: "PetcoCircularTT-Regular", aria !important;
   font-size: 18px;
   font-weight: 500;
@@ -122,8 +123,23 @@ a {
 }
 @media all and (max-width: 768px) {
   .citrusSolid__sliderCopyContainer {
-    top: 25%;
+    top: 20%;
   }
+  .citrusSolid__sliderTextBox h1 {
+    font-family: "PetcoCircularTT-Bold", arial !important;
+    font-weight: 900;
+    font-size: 50px;
+    margin: 10px auto;
+  }
+  .citrusSolid__sliderTextBox p {
+    font-family: "PetcoCircularTT-Regular", aria !important;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    padding: 0 25px;
+  }
+}
+@media all and (max-width: 600px) {
   .citrusSolid__sliderTextBox h1 {
     font-family: "PetcoCircularTT-Bold", arial !important;
     font-weight: 900;
@@ -136,11 +152,6 @@ a {
     font-weight: 500;
     margin-bottom: 15px;
     padding: 0 25px;
-  }
-}
-@media all and (max-width: 768px) {
-  .citrusSolid__sliderCopyContainer {
-    top: 20%;
   }
 }
 @media all and (max-width: 375px) {
@@ -162,10 +173,6 @@ a {
   }
 }
 .citrusSolid__sliderCTABox {
-  /* position: absolute; */
-  /* width: 100%; */
-  /* height: 100%; */
-  /* top: 65%; */
   display: flex;
   justify-content: center;
 }
