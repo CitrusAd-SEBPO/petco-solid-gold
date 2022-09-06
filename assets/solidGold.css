@@ -68,11 +68,104 @@ a {
 .citrusSolid__sliderItem {
   position: relative;
 }
-.citrusSolid__sliderCTABox {
+.citrusSolid__sliderCopyContainer {
   position: absolute;
   width: 100%;
-  height: 100%;
-  top: 65%;
+  /* height: 100%; */
+  top: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.citrusSolid__sliderTextBox {
+  text-align: center;
+  width: 550px;
+  max-width: 100%;
+  margin: 0 auto;
+  color: #001952;
+}
+.citrusSolid__sliderTextBox h1 {
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-weight: 900;
+  font-size: 40px;
+  margin: 20px auto;
+}
+.citrusSolid__sliderTextBox p {
+  font-family: "PetcoCircularTT-Regular", aria !important;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding: 0 50px;
+}
+@media all and (max-width: 1350px) {
+  .citrusSolid__sliderCopyContainer {
+    top: 5%;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .citrusSolid__sliderCopyContainer {
+    top: 10%;
+  }
+  .citrusSolid__sliderTextBox h1 {
+    font-family: "PetcoCircularTT-Bold", arial !important;
+    font-weight: 900;
+    font-size: 30px;
+    margin: 10px auto;
+  }
+  .citrusSolid__sliderTextBox p {
+    font-family: "PetcoCircularTT-Regular", aria !important;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    padding: 0 25px;
+  }
+}
+@media all and (max-width: 768px) {
+  .citrusSolid__sliderCopyContainer {
+    top: 25%;
+  }
+  .citrusSolid__sliderTextBox h1 {
+    font-family: "PetcoCircularTT-Bold", arial !important;
+    font-weight: 900;
+    font-size: 30px;
+    margin: 10px auto;
+  }
+  .citrusSolid__sliderTextBox p {
+    font-family: "PetcoCircularTT-Regular", aria !important;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    padding: 0 25px;
+  }
+}
+@media all and (max-width: 768px) {
+  .citrusSolid__sliderCopyContainer {
+    top: 20%;
+  }
+}
+@media all and (max-width: 375px) {
+  .citrusSolid__sliderCopyContainer {
+    top: 20%;
+  }
+  .citrusSolid__sliderTextBox h1 {
+    font-family: "PetcoCircularTT-Bold", arial !important;
+    font-weight: 900;
+    font-size: 20px;
+    margin: 10px auto;
+  }
+  .citrusSolid__sliderTextBox p {
+    font-family: "PetcoCircularTT-Regular", aria !important;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    padding: 0 25px;
+  }
+}
+.citrusSolid__sliderCTABox {
+  /* position: absolute; */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* top: 65%; */
   display: flex;
   justify-content: center;
 }
