@@ -86,6 +86,7 @@ a {
   font-family: "PetcoCircularTT-Bold", arial !important;
   font-weight: 900;
   font-size: 50px;
+  line-height: 45px;
   margin: 20px auto;
 }
 .citrusSolid__sliderTextBox p {
@@ -111,6 +112,7 @@ a {
     font-family: "PetcoCircularTT-Bold", arial !important;
     font-weight: 900;
     font-size: 30px;
+    line-height: 25px;
     margin: 10px auto;
   }
   .citrusSolid__sliderTextBox p {
@@ -129,6 +131,7 @@ a {
     font-family: "PetcoCircularTT-Bold", arial !important;
     font-weight: 900;
     font-size: 50px;
+    line-height: 45px;
     margin: 10px auto;
   }
   .citrusSolid__sliderTextBox p {
@@ -144,6 +147,7 @@ a {
     font-family: "PetcoCircularTT-Bold", arial !important;
     font-weight: 900;
     font-size: 30px;
+    line-height: 25px;
     margin: 10px auto;
   }
   .citrusSolid__sliderTextBox p {
@@ -162,6 +166,7 @@ a {
     font-family: "PetcoCircularTT-Bold", arial !important;
     font-weight: 900;
     font-size: 20px;
+    line-height: 20px;
     margin: 10px auto;
   }
   .citrusSolid__sliderTextBox p {
