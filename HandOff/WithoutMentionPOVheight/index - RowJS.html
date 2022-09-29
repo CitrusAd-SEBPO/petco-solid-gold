@@ -1,4 +1,5 @@
 <!-- This page developed by SEBPO citrus team. team member Imran Ahmed. delivered date is 09/05/2022 -->
+
 <style>
     /*-----------------------------------*/
     /*------------ Splide Css-----------*/
@@ -46,7 +47,6 @@
 
     .splide__slide img {
         vertical-align: bottom;
-        min-height: 100px;
     }
 
     .splide__track {
@@ -284,10 +284,6 @@
     }
 
     /* default css */
-    .citrusSolid__Wrapper {
-        overflow: hidden;
-    }
-
     .citrusSolid__Wrapper h1,
     .citrusSolid__Wrapper h2,
     .citrusSolid__Wrapper h3,
@@ -314,17 +310,22 @@
         display: block;
     }
 
+    /* slider styling */
+    .citrusSolid__sliderContainer {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
     /* 
-        Row js special styles
-        indicator styling
-         */
+    Row js special styles
+    indicator styling
+     */
 
     .citrus_solid_carousel {
         width: 100%;
         position: relative;
         display: none;
-        justify-content: flex-start;
-
     }
 
     .citrus_solid_carousel-inner {
@@ -334,11 +335,7 @@
 
     .citrus_solid_carousel .citrus_solid_carousel-inner .citrus_solid_carousel-item {
         width: 100%;
-        overflow: hidden;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        justify-content: center;
-        flex: 1;
+        justify-content: flex-start;
     }
 
     .citrus_solid_carousel-indicators {
@@ -925,8 +922,8 @@
     }
 
     /*-******************** 
-    Responsive styles 
-    *************************/
+Responsive styles 
+*************************/
     @media all and (max-width: 768px) {
         .citrusSolid__desktop_hide {
             display: block;
@@ -1028,8 +1025,8 @@
     }
 
     /*****************************
-     tablet and small laptop 
-    ******************************/
+ tablet and small laptop 
+******************************/
     @media all and (min-width: 768px) and (max-width: 1024px) {
         .citrusSolid__findDogRecipesContainer .citrusSolid__productCol {
             width: 25%;
@@ -1053,8 +1050,8 @@
     }
 
     /* *****************
-     extra small device  
-    **********************/
+ extra small device  
+**********************/
     @media all and (max-width: 425px) {
         .citrusSolid__VideoTextContainer {
             width: 380px;
@@ -1081,42 +1078,13 @@
             width: 248px;
         }
     }
-
-    /* special carousel styling for fixing 1st time load extra white space issue */
-    .citrus_solid_carousel-item,
-    .citrusSolid__sliderItem,
-    .citrusSolid__sliderItem img {
-        height: 390px;
-        object-fit: fill;
-    }
-
-    @media all and (min-width: 1444px) {
-
-        .citrus_solid_carousel-item,
-        .citrusSolid__sliderItem,
-        .citrusSolid__sliderItem img {
-            width: 100%;
-            object-fit: fill;
-            height: 500px;
-        }
-    }
-
-    @media all and (max-width: 768px) {
-
-        .citrus_solid_carousel-item,
-        .citrusSolid__sliderItem,
-        .citrusSolid__sliderItem img {
-            height: auto !important;
-            /* object-fit: cover; */
-        }
-    }
 </style>
 <main class="citrusSolid__Wrapper">
     <!-- solid gold carousel start -->
-    <section class="citrus_solid_carousel">
+    <section class="citrusSolid__sliderContainer citrus_solid_carousel">
         <div id="image-carousel" class="citrusSolid__slider citrus_solid_carousel-inner">
             <!-- 1st slide -->
-            <div class="citrus_solid_carousel-item">
+            <div class="citrusSolid__firstSlideContainer citrus_solid_carousel-item">
                 <div class="citrusSolid__sliderItem">
                     <img class="citrusSolid__mobile_hide"
                         src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/SolidGold-POV01Desktop"
@@ -1142,7 +1110,7 @@
                 </div>
             </div>
             <!-- 2nd slide -->
-            <div class="citrus_solid_carousel-item">
+            <div class="citrusSolid__SecondSlideContainer citrus_solid_carousel-item">
                 <div class="citrusSolid__sliderItem">
                     <img class="citrusSolid__mobile_hide"
                         src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/SolidGold-POV02Desktop"
@@ -1167,7 +1135,7 @@
                 </div>
             </div>
             <!-- 3rd slide -->
-            <div class="citrus_solid_carousel-item">
+            <div class="citrusSolid__thirdSlideContainer citrus_solid_carousel-item">
                 <div class="citrusSolid__sliderItem">
                     <img class="citrusSolid__mobile_hide"
                         src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/SolidGold-POV03Desktop"
@@ -2561,7 +2529,7 @@
 
     let jump = 1;
 
-    let interval = 500000;
+    let interval = 5000;
 
     let time;
 
@@ -2684,7 +2652,7 @@
             citrus_solid_carouselInner.prepend(citrus_solid_carouselInner.lastElementChild);
         };
 
-        citrus_solid_carousel.style.justifyContent = 'flex-start';
+        citrus_solid_carousel.style.justifyContent = 'solidpet-flex-start';
         citrus_solid_carouselInner.style.transform = `translateX(-${step}%)`;
     };
 
@@ -2693,7 +2661,7 @@
             direction = 1;
             citrus_solid_carouselInner.append(citrus_solid_carouselInner.firstElementChild);
         };
-        citrus_solid_carousel.style.justifyContent = 'flex-end'
+        citrus_solid_carousel.style.justifyContent = 'solidpet-flex-end'
         citrus_solid_carouselInner.style.transform = `translateX(${step}%)`;
     };
 
